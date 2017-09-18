@@ -1,3 +1,7 @@
-# TICN
+#  Aligning-of-PIE-with-rfc8033-in-ns3/README.md
 
-###first test on github
+Course Code: CS822
+
+
+Assignment: # FP1
+
