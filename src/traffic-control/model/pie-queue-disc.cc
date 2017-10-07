@@ -312,7 +312,21 @@ void PieQueueDisc::CalculateP ()
   else
     {
       p = m_a * (qDelay.GetSeconds () - m_qDelayRef.GetSeconds ()) + m_b * (qDelay.GetSeconds () - m_qDelayOld.GetSeconds ());
-      if (m_dropProb < 0.001)
+      
+      if (m_dropProb < 0.000001)
+        {
+           p /= 2048;
+        }
+      else if (m_dropProb < 0.00001)
+        {
+           p /= 512 ;
+        }
+      else if (m_dropProb < 0.0001)
+        {
+           p /= 128 ;
+        }
+
+      else if (m_dropProb < 0.001)
         {
           p /= 32;
         }
