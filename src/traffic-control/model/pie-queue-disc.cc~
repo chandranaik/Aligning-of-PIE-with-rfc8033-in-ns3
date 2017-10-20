@@ -338,17 +338,9 @@ void PieQueueDisc::CalculateP ()
         {
           p /= 2;
         }
-      else if (m_dropProb < 1)
-        {
-          p /= 0.5;
-        }
-      else if (m_dropProb < 10)
-        {
-          p /= 0.125;
-        }
       else
         {
-          p /= 0.03125;
+          p = p;
         }
       if ((m_dropProb >= 0.1) && (p > 0.02))
         {
@@ -356,14 +348,15 @@ void PieQueueDisc::CalculateP ()
         }
     }
 
-  p += m_dropProb;
+  m_dropProb + = p;
 
   // For non-linear drop in prob
 
   if (qDelay.GetSeconds () == 0 && m_qDelayOld.GetSeconds () == 0)
     {
-      p *= 0.98;
+      m_dropProb *= 0.98;
     }
+
   else if (qDelay.GetSeconds () > 0.2)
     {
       p += 0.02;
@@ -450,11 +443,11 @@ PieQueueDisc::DoDequeue ()
             {
               if (m_avgDqRate == 0)
                 {
-                  m_avgDqRate = m_dqCount / tmp;
+                  m_avgDqRate =tmp;
                 }
               else
                 {
-                  m_avgDqRate = (0.5 * m_avgDqRate) + (0.5 * (m_dqCount / tmp));
+                  m_avgDqRate = (0.75 * m_avgDqRate) + (0.25 * tmp);
                 }
             }
 
