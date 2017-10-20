@@ -348,7 +348,7 @@ void PieQueueDisc::CalculateP ()
         }
     }
 
-  m_dropProb + = p;
+  p + = m_dropProb;
 
   // For non-linear drop in prob
 
