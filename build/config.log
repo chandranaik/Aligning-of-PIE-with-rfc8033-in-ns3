@@ -1,6 +1,6 @@
-# project ns (3-dev) configured on Fri Oct 20 16:48:00 2017 by
+# project ns (3-dev) configured on Thu Oct 26 19:18:58 2017 by
 # waf 1.8.19 (abi 98, python 20706f0 on linux2)
-# using ./waf configure --enable-examples
+# using ./waf configure --enable-tests
 #
 ----------------------------------------
 Setting top to
@@ -516,9 +516,9 @@ Checking for compilation flag -Wl,--soname=foo support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_8ba016018883744cb9c950a6d1556925/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_a61143337a31dafba60d0e23b1db16c1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_8ba016018883744cb9c950a6d1556925/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-Wl,--soname=foo', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a61143337a31dafba60d0e23b1db16c1/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------
 Checking for program 'python'
@@ -621,12 +621,12 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3b8308b8e92e4ad5f913681e7c9a4857/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_ae77e5bcc293012200ba0c58c8527df9/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-fstack-protector', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_3b8308b8e92e4ad5f913681e7c9a4857/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_3b8308b8e92e4ad5f913681e7c9a4857/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fno-strict-aliasing', '-fstack-protector', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_ae77e5bcc293012200ba0c58c8527df9/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_ae77e5bcc293012200ba0c58c8527df9/testbuild/testprog[0m
 
-['/usr/bin/g++', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_3b8308b8e92e4ad5f913681e7c9a4857/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpthread', '-ldl', '-lutil', '-lm', '-lpython2.7']
+['/usr/bin/g++', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_ae77e5bcc293012200ba0c58c8527df9/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpthread', '-ldl', '-lutil', '-lm', '-lpython2.7']
 yes
 ------------------------------------------------------------------
 Asking python-config for pyext '--cflags --libs --ldflags' flags
@@ -658,30 +658,30 @@ int main(int argc, char **argv)
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_4c4b7e618c003bd265a48de172ebfc58/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_4692cdc279a8e9059d0e88ee0be947e5/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fPIC', '-fno-strict-aliasing', '-fstack-protector', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_4c4b7e618c003bd265a48de172ebfc58/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_4c4b7e618c003bd265a48de172ebfc58/testbuild/testprog.so[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fPIC', '-fno-strict-aliasing', '-fstack-protector', '-fwrapv', '-I/usr/include/python2.7', '-I/usr/include/x86_64-linux-gnu/python2.7', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-D_FORTIFY_SOURCE=2', '-DNDEBUG', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_4692cdc279a8e9059d0e88ee0be947e5/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_4692cdc279a8e9059d0e88ee0be947e5/testbuild/testprog.so[0m
 
-['/usr/bin/g++', '-shared', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_4c4b7e618c003bd265a48de172ebfc58/testbuild/testprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpthread', '-ldl', '-lutil', '-lm', '-lpython2.7']
+['/usr/bin/g++', '-shared', '-Xlinker', '-export-dynamic', '-Wl,-O1', '-Wl,-Bsymbolic-functions', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_4692cdc279a8e9059d0e88ee0be947e5/testbuild/testprog.so', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-L/usr/lib/python2.7/config-x86_64-linux-gnu', '-L/usr/lib', '-lpthread', '-ldl', '-lutil', '-lm', '-lpython2.7']
 yes
 ------------------------------------------------------------------
 Checking for compilation flag -fvisibility=hidden support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_8ba016018883744cb9c950a6d1556925/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_a61143337a31dafba60d0e23b1db16c1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_8ba016018883744cb9c950a6d1556925/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-fvisibility=hidden', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a61143337a31dafba60d0e23b1db16c1/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-array-bounds support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_8ba016018883744cb9c950a6d1556925/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_a61143337a31dafba60d0e23b1db16c1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_8ba016018883744cb9c950a6d1556925/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-array-bounds', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DPYTHONDIR="/usr/local/lib/python2.7/dist-packages"', '-DPYTHONARCHDIR="/usr/local/lib/python2.7/dist-packages"', '-DHAVE_PYEMBED=1', '-DHAVE_PYEXT=1', '-DHAVE_PYTHON_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a61143337a31dafba60d0e23b1db16c1/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for pybindgen location
@@ -733,9 +733,9 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_f55b53ee65299934084c6a6cb64fba16/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_9835c0f5a60ed6105b7d5e6d090712b3/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_f55b53ee65299934084c6a6cb64fba16/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_9835c0f5a60ed6105b7d5e6d090712b3/testbuild/test.cpp.1.o']
 err: ../test.cpp: In function ‘int main(int, char**)’:
 ../test.cpp:5:7: error: ‘uint128_t’ was not declared in this scope
   if ((uint128_t *) 0) return 0;
@@ -757,8 +757,8 @@ from /home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/src/co
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140186224135440: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_f55b53ee65299934084c6a6cb64fba16/testbuild/test.cpp.1.o']
+	{task 140344536059152: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_9835c0f5a60ed6105b7d5e6d090712b3/testbuild/test.cpp.1.o']
 
 not found
 from /home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/src/core: The configuration failed
@@ -775,12 +775,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_0582e9c026839491256bacbff4150d30/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_7609a6ff0917652d5073ad73d8f69b00/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_0582e9c026839491256bacbff4150d30/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_0582e9c026839491256bacbff4150d30/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_7609a6ff0917652d5073ad73d8f69b00/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_7609a6ff0917652d5073ad73d8f69b00/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_0582e9c026839491256bacbff4150d30/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_7609a6ff0917652d5073ad73d8f69b00/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking high precision implementation
@@ -796,12 +796,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header inttypes.h
@@ -814,12 +814,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_474a56fd57c5ec5dd73113187573013c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_474a56fd57c5ec5dd73113187573013c/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_474a56fd57c5ec5dd73113187573013c/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_474a56fd57c5ec5dd73113187573013c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -832,9 +832,9 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_d9b0c7ed57ba0f22597f9132940379e6/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_aa415d10df429e03d4f1e6951d2e7196/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_d9b0c7ed57ba0f22597f9132940379e6/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_aa415d10df429e03d4f1e6951d2e7196/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:26: fatal error: sys/inttypes.h: No such file or directory
  #include <sys/inttypes.h>
                           ^
@@ -847,8 +847,8 @@ from /home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/src/co
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140186224243792: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_d9b0c7ed57ba0f22597f9132940379e6/testbuild/test.cpp.1.o']
+	{task 140344536159312: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_aa415d10df429e03d4f1e6951d2e7196/testbuild/test.cpp.1.o']
 
 not found
 from /home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/src/core: The configuration failed
@@ -863,12 +863,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_f76cc60d3d97c171f53388adf54bc4fc/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_35d82e0507fa81641d5c42a7c1679c7d/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_f76cc60d3d97c171f53388adf54bc4fc/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_f76cc60d3d97c171f53388adf54bc4fc/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_35d82e0507fa81641d5c42a7c1679c7d/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_35d82e0507fa81641d5c42a7c1679c7d/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_f76cc60d3d97c171f53388adf54bc4fc/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_35d82e0507fa81641d5c42a7c1679c7d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header sys/stat.h
@@ -881,12 +881,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_3dfa0c1deb7dd5b4c046f913ac25ae83/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_34952f7b71dbe63c315f6d173df4f375/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_3dfa0c1deb7dd5b4c046f913ac25ae83/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_3dfa0c1deb7dd5b4c046f913ac25ae83/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_34952f7b71dbe63c315f6d173df4f375/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_34952f7b71dbe63c315f6d173df4f375/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_3dfa0c1deb7dd5b4c046f913ac25ae83/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_34952f7b71dbe63c315f6d173df4f375/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header dirent.h
@@ -899,12 +899,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_a3a110f49216d6e0ba5b5c874bc9bc60/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_036aba6c8242637cf94209808102f93a/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a3a110f49216d6e0ba5b5c874bc9bc60/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_a3a110f49216d6e0ba5b5c874bc9bc60/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_036aba6c8242637cf94209808102f93a/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_036aba6c8242637cf94209808102f93a/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a3a110f49216d6e0ba5b5c874bc9bc60/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_036aba6c8242637cf94209808102f93a/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header stdlib.h
@@ -917,12 +917,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_d973193ecfe0c9c042185ed6d534c76f/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_bec221534636e67ebc5d4f71119e8edd/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_d973193ecfe0c9c042185ed6d534c76f/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_d973193ecfe0c9c042185ed6d534c76f/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_bec221534636e67ebc5d4f71119e8edd/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_bec221534636e67ebc5d4f71119e8edd/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_d973193ecfe0c9c042185ed6d534c76f/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_bec221534636e67ebc5d4f71119e8edd/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header signal.h
@@ -935,12 +935,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_003f55424e649ed01cd608be8ac097ef/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_84c733599165c7bc8f171ee5a4e48725/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_003f55424e649ed01cd608be8ac097ef/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_003f55424e649ed01cd608be8ac097ef/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_84c733599165c7bc8f171ee5a4e48725/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_84c733599165c7bc8f171ee5a4e48725/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_003f55424e649ed01cd608be8ac097ef/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_84c733599165c7bc8f171ee5a4e48725/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header pthread.h
@@ -955,12 +955,12 @@ int main ()
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_96afbdc5bb970dcd918815309e00c316/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_e3b3f6d928cd4d9a8a9c6e8847ad4860/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_96afbdc5bb970dcd918815309e00c316/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_96afbdc5bb970dcd918815309e00c316/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_e3b3f6d928cd4d9a8a9c6e8847ad4860/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_e3b3f6d928cd4d9a8a9c6e8847ad4860/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_96afbdc5bb970dcd918815309e00c316/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_e3b3f6d928cd4d9a8a9c6e8847ad4860/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header stdint.h
@@ -973,12 +973,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_INTTYPES_H=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_cf7dea326908d4c3e29c1e917dd465ec/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6c69d090a0cbb869f9ebe9390126ddee/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header inttypes.h
@@ -991,12 +991,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_474a56fd57c5ec5dd73113187573013c/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_474a56fd57c5ec5dd73113187573013c/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_474a56fd57c5ec5dd73113187573013c/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a7c4e7e8bc7ba07194ed59d23e080fc2/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_474a56fd57c5ec5dd73113187573013c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header sys/inttypes.h
@@ -1009,9 +1009,9 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_d9b0c7ed57ba0f22597f9132940379e6/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_aa415d10df429e03d4f1e6951d2e7196/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_d9b0c7ed57ba0f22597f9132940379e6/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_aa415d10df429e03d4f1e6951d2e7196/testbuild/test.cpp.1.o']
 err: ../test.cpp:1:26: fatal error: sys/inttypes.h: No such file or directory
  #include <sys/inttypes.h>
                           ^
@@ -1024,8 +1024,8 @@ from /home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/src/co
     raise Errors.BuildError(self.producer.error)
 BuildError: Build failed
  -> task in 'testprog' failed (exit status 1): 
-	{task 140186223286736: cxx test.cpp -> test.cpp.1.o}
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_d9b0c7ed57ba0f22597f9132940379e6/testbuild/test.cpp.1.o']
+	{task 140344535202256: cxx test.cpp -> test.cpp.1.o}
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_aa415d10df429e03d4f1e6951d2e7196/testbuild/test.cpp.1.o']
 
 not found
 from /home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/src/core: The configuration failed
@@ -1039,12 +1039,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_6ff4a3f8fe52f67a2faa93521e7372a3/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_2944b6f7db9dc102c328db8a01559c98/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6ff4a3f8fe52f67a2faa93521e7372a3/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_6ff4a3f8fe52f67a2faa93521e7372a3/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-pthread', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE___UINT128_T=1', '-DINT64X64_USE_128=1', '-DHAVE_SYS_TYPES_H=1', '-DHAVE_SYS_STAT_H=1', '-DHAVE_DIRENT_H=1', '-DHAVE_STDLIB_H=1', '-DHAVE_GETENV=1', '-DHAVE_SIGNAL_H=1', '-DHAVE_PTHREAD_H=1', '-DHAVE_STDINT_H=1', '-DHAVE_INTTYPES_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_2944b6f7db9dc102c328db8a01559c98/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_2944b6f7db9dc102c328db8a01559c98/testbuild/testprog[0m
 
-['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6ff4a3f8fe52f67a2faa93521e7372a3/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
+['/usr/bin/g++', '-pthread', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_2944b6f7db9dc102c328db8a01559c98/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic', '-lrt']
 yes
 ------------------------------------------------------------------
 Checking for header sys/ioctl.h
@@ -1057,12 +1057,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_adcafc45080cde0143e0737db8bfb459/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_148e8d369d6939166578f548eb7da2aa/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_adcafc45080cde0143e0737db8bfb459/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_adcafc45080cde0143e0737db8bfb459/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_148e8d369d6939166578f548eb7da2aa/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_148e8d369d6939166578f548eb7da2aa/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_adcafc45080cde0143e0737db8bfb459/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_148e8d369d6939166578f548eb7da2aa/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header net/if.h
@@ -1075,12 +1075,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_6f02a55ffd625949fddf59455b82b843/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b2c95ca4cdd7769b825149804e649f9b/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6f02a55ffd625949fddf59455b82b843/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_6f02a55ffd625949fddf59455b82b843/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_b2c95ca4cdd7769b825149804e649f9b/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_b2c95ca4cdd7769b825149804e649f9b/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6f02a55ffd625949fddf59455b82b843/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_b2c95ca4cdd7769b825149804e649f9b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header net/ethernet.h
@@ -1093,12 +1093,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_a87b9289372e184033ccd0db11b00e7c/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_25b7218d34b58724f821de07df46b669/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a87b9289372e184033ccd0db11b00e7c/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_a87b9289372e184033ccd0db11b00e7c/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_25b7218d34b58724f821de07df46b669/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_25b7218d34b58724f821de07df46b669/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a87b9289372e184033ccd0db11b00e7c/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_25b7218d34b58724f821de07df46b669/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header linux/if_tun.h
@@ -1111,12 +1111,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for header netpacket/packet.h
@@ -1129,12 +1129,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_1cb0256d5ba649b4f7f80524d0d7185d/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_b23ba305a8dd039224bffb307ea05b9b/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_1cb0256d5ba649b4f7f80524d0d7185d/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_1cb0256d5ba649b4f7f80524d0d7185d/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_b23ba305a8dd039224bffb307ea05b9b/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_b23ba305a8dd039224bffb307ea05b9b/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_1cb0256d5ba649b4f7f80524d0d7185d/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_b23ba305a8dd039224bffb307ea05b9b/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 ------------------------------------------------------------------
 Checking for NSC location
@@ -1160,12 +1160,12 @@ int main(int argc, char **argv) {
 }
 
 <==
-[1/2] Compiling [32mbuild/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/test.cpp[0m
+[1/2] Compiling [32mbuild/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/testbuild/test.cpp.1.o']
-[2/2] Linking [33mbuild/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/testbuild/testprog[0m
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/testbuild/test.cpp.1.o']
+[2/2] Linking [33mbuild/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/testbuild/testprog[0m
 
-['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_90f1a9c19b6a23cd69bbc768bbab2598/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
+['/usr/bin/g++', 'test.cpp.1.o', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_6eb1c8a0e2e1a1c274c460f99cc09324/testbuild/testprog', '-Wl,-Bstatic', '-Wl,-Bdynamic']
 yes
 (tool boost is already loaded, skipping)
 ------------------------------------------------------------------
@@ -1205,54 +1205,54 @@ Checking for compilation flag -Wno-error=deprecated-d... support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_8ba016018883744cb9c950a6d1556925/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_a61143337a31dafba60d0e23b1db16c1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_8ba016018883744cb9c950a6d1556925/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a61143337a31dafba60d0e23b1db16c1/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wno-error=deprecated-d... support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_12e753d1a27da7d9920835eee26a7bd4/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_f31bb9775fb58f51e5b89e4233e6b02a/test.c[0m
 
-['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_12e753d1a27da7d9920835eee26a7bd4/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wno-error=deprecated-declarations', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_f31bb9775fb58f51e5b89e4233e6b02a/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_8ba016018883744cb9c950a6d1556925/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_a61143337a31dafba60d0e23b1db16c1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_8ba016018883744cb9c950a6d1556925/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a61143337a31dafba60d0e23b1db16c1/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -fstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_12e753d1a27da7d9920835eee26a7bd4/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_f31bb9775fb58f51e5b89e4233e6b02a/test.c[0m
 
-['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_12e753d1a27da7d9920835eee26a7bd4/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-fstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_f31bb9775fb58f51e5b89e4233e6b02a/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_8ba016018883744cb9c950a6d1556925/test.cpp[0m
+[1/1] Compiling [32mbuild/.conf_check_a61143337a31dafba60d0e23b1db16c1/test.cpp[0m
 
-['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_8ba016018883744cb9c950a6d1556925/testbuild/test.cpp.1.o']
+['/usr/bin/g++', '-O0', '-ggdb', '-g3', '-Wall', '-Werror', '-std=c++11', '-Wno-error=deprecated-declarations', '-fstrict-aliasing', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.cpp', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_a61143337a31dafba60d0e23b1db16c1/testbuild/test.cpp.1.o']
 ok
 ------------------------------------------------------------------
 Checking for compilation flag -Wstrict-aliasing support
 ==>
 int main() { return 0; }
 <==
-[1/1] Compiling [32mbuild/.conf_check_12e753d1a27da7d9920835eee26a7bd4/test.c[0m
+[1/1] Compiling [32mbuild/.conf_check_f31bb9775fb58f51e5b89e4233e6b02a/test.c[0m
 
-['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_12e753d1a27da7d9920835eee26a7bd4/testbuild/test.c.1.o']
+['/usr/bin/gcc', '-Wstrict-aliasing', '-DNS3_BUILD_PROFILE_DEBUG', '-DNS3_ASSERT_ENABLE', '-DNS3_LOG_ENABLE', '-DHAVE_SYS_IOCTL_H=1', '-DHAVE_IF_NETS_H=1', '-DHAVE_NET_ETHERNET_H=1', '-DHAVE_PACKET_H=1', '-DHAVE_IF_TUN_H=1', '../test.c', '-c', '-o', '/home/chandranaik/Desktop/201017/Aligning-of-PIE-with-rfc8033-in-ns3/build/.conf_check_f31bb9775fb58f51e5b89e4233e6b02a/testbuild/test.c.1.o']
 ok
 ------------------------------------------------------------------
 Checking for program 'doxygen'

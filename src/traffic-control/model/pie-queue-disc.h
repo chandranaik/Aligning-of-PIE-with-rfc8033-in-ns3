@@ -196,6 +196,7 @@ private:
 
   // ** Variables maintained by PIE
   double m_dropProb;                            //!< Variable used in calculation of drop probability
+  double m_accuProb;
   Time m_qDelayOld;                             //!< Old value of queue delay
   Time m_qDelay;                                //!< Current value of queue delay
   Time m_burstAllowance;                        //!< Current max burst value in seconds that is allowed before random drops kick in
